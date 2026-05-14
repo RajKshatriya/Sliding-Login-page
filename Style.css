@@ -455,7 +455,19 @@ body {
     margin-bottom: 22px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "progress top"
+            "team team"
+            "agency hero"
+            "font cubo";
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 760px) {
     .dashboard {
         grid-template-columns: 1fr;
         grid-template-areas:
