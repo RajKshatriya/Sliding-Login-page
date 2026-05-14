@@ -3,67 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Creative Dashboard Layout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Style.css">
-    <script src="Style.js" defer></script>
 </head>
 <body>
-    <div class="backgroundimage">
+    <div class="dashboard">
+        <section class="card card-progress">
+            <div class="card-head">
+                <h2>Brand of Designing</h2>
+                <button class="dot-btn"><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <div class="progress-ring">
+                <div class="progress-inner">
+                    <strong>75%</strong>
+                    <span>Progress</span>
+                </div>
+            </div>
+            <h3>2.5K</h3>
+            <p>263 contributions in the last year</p>
+            <a href="#" class="pill-link">View report <i class="fa-solid fa-chevron-right"></i></a>
+        </section>
 
+        <section class="card card-top">
+            <article class="metric-card">
+                <div class="metric-title">
+                    <h3>4.875</h3>
+                    <span class="icon-chip"><i class="fa-solid fa-heart"></i></span>
+                </div>
+                <p class="label">Project Views <br>last year</p>
+                <p class="growth growth-up"><i class="fa-solid fa-arrow-trend-up"></i> +15% <span>vs last year</span></p>
+            </article>
+            <article class="metric-card">
+                <p class="label">New Users</p>
+                <h3>57K</h3>
+                <p class="growth growth-up">+10% <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>vs last month</span></p>
+                <span class="corner-icon"><i class="fa-regular fa-user"></i><i class="fa-regular fa-user"></i></span>
+            </article>
+        </section>
+
+        <section class="card card-team">
+            <h2>Team of passionate designers and developers</h2>
+            <div class="avatars">
+                <span>A</span><span>R</span><span>M</span><span>T</span><span>+2</span>
+            </div>
+            <hr>
+            <p class="label">Daily</p>
+            <h3>54</h3>
+            <p class="growth growth-up">+40% <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>vs yesterday</span></p>
+            <span class="team-icon"><i class="fa-regular fa-user"></i><i class="fa-solid fa-plus"></i></span>
+        </section>
+
+        <section class="card card-agency">
+            <h2>Smart Digital Agency For Your <span>Business</span></h2>
+            <button class="arrow-chip"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <div class="mini-gallery">
+                <div class="photo p1"></div>
+                <div class="photo p2"></div>
+            </div>
+            <div class="mini-avatars">
+                <span>D</span><span>S</span><span>L</span><span class="plus">+</span>
+            </div>
+        </section>
+
+        <section class="card card-hero">
+            <div class="hero-bg"></div>
+            <div class="hero-face"></div>
+            <div class="floating-card left">
+                <strong>Project Growth</strong>
+                <div class="line-chart"></div>
+            </div>
+            <div class="floating-card right">
+                <strong>Conversion Age</strong>
+                <div class="bar-chart"></div>
+            </div>
+            <div class="floating-card bottom-left">
+                <span class="play"><i class="fa-solid fa-play"></i></span>
+                <div>
+                    <strong>26.807</strong>
+                    <p>Total Plays</p>
+                </div>
+            </div>
+            <div class="floating-card bottom-right">
+                <i class="fa-solid fa-heart"></i>
+                <strong>19,46%</strong>
+                <p>Engagement Rate</p>
+                <span class="growth-up">+102,48%</span>
+            </div>
+        </section>
+
+        <section class="card card-font">
+            <h2>Font</h2>
+            <p>Sk- Modernist</p>
+            <div class="swatches">
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <a href="#">View all fonts <i class="fa-solid fa-chevron-right"></i></a>
+        </section>
+
+        <section class="card card-cubo">
+            <div class="logo-mark"></div>
+            <h2>CUBO</h2>
+            <p>Digital Studio</p>
+            <a href="#" class="pill-link">Discover more <i class="fa-solid fa-chevron-right"></i></a>
+        </section>
     </div>
-    <div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Teacher's Login</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<!-- <input type="email" placeholder="Email" /> -->
-			<input type="password" placeholder="Password" />
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Student Login</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome</h1>
-				<p>To check attendeance please login with your personal info</p>
-				<button class="ghost" id="signIn">student's LOgin</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Student!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Teacher's Login</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer>
-	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="#">Raj Kshatriya</a>
-    </p>
-</footer>
 </body>
 </html>
