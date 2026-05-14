@@ -58,7 +58,6 @@ h2, h3, h4, p {
 
 .card-top h2 {
   max-width: 160px;
-  font-size: 40px;
   font-size: clamp(1.6rem, 2.2vw, 2.2rem);
 }
 
@@ -89,7 +88,7 @@ h2, h3, h4, p {
 .ring span { color: #555; }
 
 .progress-card h3 { font-size: 62px; line-height: 1; }
-.progress-card p { font-size: 33px; font-size: clamp(1.1rem, 1.6vw, 1.2rem); color: #2e2e2e; line-height: 1.4; }
+.progress-card p { font-size: clamp(1.1rem, 1.6vw, 1.2rem); color: #2e2e2e; line-height: 1.4; }
 
 .soft-btn,
 .dark-btn,
@@ -138,7 +137,7 @@ h2, h3, h4, p {
 }
 
 .positive { color: #10b355; font-weight: 700; }
-.negative { color: #ff406f; font-weight: 700; }
+.attention { color: #ff406f; font-weight: 700; }
 
 .users-icon {
   position: absolute;
