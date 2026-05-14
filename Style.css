@@ -17,6 +17,7 @@
 
 html,
 body {
+    /* Keep a 15px frame on each side to mimic the requested inset canvas look. */
     height: calc(100% - 30px);
     width: calc(100% - 30px);
     background-color: #141414;
@@ -197,7 +198,6 @@ main {
 
 .center .bg-circle img {
     position: relative;
-    bottom: 80px;
     top: -91px;
     right: -28px;
     height: 400px;
