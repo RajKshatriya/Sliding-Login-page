@@ -13,7 +13,7 @@ body {
 .dashboard-shell {
   width: 100%;
   min-height: 100vh;
-  padding: 0.6vh 0.6vw;
+  padding: 0.8vw;
 }
 
 .dashboard-grid {
@@ -21,8 +21,8 @@ body {
   min-height: 96vh;
   margin: 0;
   display: grid;
-  grid-template-columns: 20.5vw 22.7vw 22.7vw 20.5vw;
-  grid-template-rows: 20vh 20vh 20vh 18vh;
+  grid-template-columns: 22vw 24vw 24vw 22vw;
+  grid-template-rows: 23vh 23vh 23vh 22vh;
   grid-template-areas:
     "progress metric users team"
     "progress hero hero team"
