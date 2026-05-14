@@ -11,28 +11,31 @@ body {
 }
 
 .dashboard-shell {
-  padding: 2rem;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1vh 1vw;
 }
 
 .dashboard-grid {
-  max-width: 1450px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 98vh;
+  margin: 0;
   display: grid;
-  grid-template-columns: 320px 1fr 1fr 320px;
-  grid-template-rows: 250px 285px 285px 215px;
+  grid-template-columns: 22vw 24.2vw 24.2vw 22vw;
+  grid-template-rows: 23vh 25vh 25vh 22vh;
   grid-template-areas:
     "progress metric users team"
     "progress hero hero team"
     "agency hero hero logo"
     "agency font design logo";
-  gap: 16px;
+  gap: 1vh 0.8vw;
 }
 
 .card {
-  border-radius: 28px;
+  border-radius: 1.8vw;
   background: #fff;
   overflow: hidden;
-  padding: 28px;
+  padding: 1.8vw;
   position: relative;
 }
 
@@ -40,15 +43,15 @@ h2, h3, h4, p {
   margin: 0;
 }
 
-.progress-card { grid-area: progress; background: #fff1f4; display: grid; gap: 20px; }
-.metric-card { grid-area: metric; display: grid; gap: 14px; }
-.users-card { grid-area: users; display: grid; align-content: start; gap: 10px; }
-.team-card { grid-area: team; display: grid; align-content: start; gap: 20px; }
+.progress-card { grid-area: progress; background: #fff1f4; display: grid; gap: 1.1vh; }
+.metric-card { grid-area: metric; display: grid; gap: 0.8vh; }
+.users-card { grid-area: users; display: grid; align-content: start; gap: 0.6vh; }
+.team-card { grid-area: team; display: grid; align-content: start; gap: 1.1vh; }
 .agency-card { grid-area: agency; background: linear-gradient(150deg, #1c1f29, #0d1018); color: #fff; display: grid; align-content: space-between; }
 .hero-card { grid-area: hero; padding: 0; background: #fbe7ec; }
-.font-card { grid-area: font; display: grid; align-content: start; gap: 14px; }
+.font-card { grid-area: font; display: grid; align-content: start; gap: 0.8vh; }
 .design-card { grid-area: design; display: flex; justify-content: space-between; align-items: center; background: #fff8fa; }
-.logo-card { grid-area: logo; display: grid; align-content: center; justify-items: center; gap: 10px; }
+.logo-card { grid-area: logo; display: grid; align-content: center; justify-items: center; gap: 0.6vh; }
 
 .card-top {
   display: flex;
@@ -57,14 +60,14 @@ h2, h3, h4, p {
 }
 
 .card-top h2 {
-  max-width: 160px;
+  max-width: 10vw;
   font-size: clamp(1.6rem, 2.2vw, 2.2rem);
 }
 
 .menu-btn {
   border: 0;
   background: transparent;
-  font-size: 24px;
+  font-size: 1.4vw;
   cursor: pointer;
 }
 
@@ -74,8 +77,8 @@ h2, h3, h4, p {
 }
 
 .ring {
-  width: 195px;
-  height: 195px;
+  width: 12vw;
+  height: 12vw;
   border-radius: 50%;
   background:
     radial-gradient(closest-side, #fff1f4 80%, transparent 82% 100%),
@@ -84,24 +87,24 @@ h2, h3, h4, p {
   place-items: center;
 }
 
-.ring strong { font-size: 52px; }
+.ring strong { font-size: 3.2vw; }
 .ring span { color: #555; }
 
-.progress-card h3 { font-size: 62px; line-height: 1; }
+.progress-card h3 { font-size: 3.8vw; line-height: 1; }
 .progress-card p { font-size: clamp(1.1rem, 1.6vw, 1.2rem); color: #2e2e2e; line-height: 1.4; }
 
 .soft-btn,
 .dark-btn,
 .pink-btn {
   border: 0;
-  border-radius: 999px;
+  border-radius: 100vh;
   font: inherit;
   cursor: pointer;
 }
 
 .soft-btn {
   justify-self: start;
-  padding: 12px 26px;
+  padding: 1.1vh 1.2vw;
   background: #fff;
 }
 
@@ -117,21 +120,21 @@ h2, h3, h4, p {
 }
 
 .badge-heart {
-  width: 56px;
+  width: 3.4vw;
   aspect-ratio: 1;
   border-radius: 50%;
   background: #ffe4eb;
   color: #ff406f;
   display: grid;
   place-items: center;
-  font-size: 24px;
+  font-size: 1.4vw;
 }
 
 .chip {
-  border: 1px solid #ececec;
+  border: 0.08vw solid #ececec;
   width: fit-content;
-  border-radius: 999px;
-  padding: 9px 20px;
+  border-radius: 100vh;
+  padding: 0.8vh 1vw;
   color: #ff406f;
   font-weight: 700;
 }
@@ -141,15 +144,15 @@ h2, h3, h4, p {
 
 .users-icon {
   position: absolute;
-  right: 28px;
-  bottom: 28px;
-  width: 84px;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  width: 5.2vw;
   aspect-ratio: 1;
-  border-radius: 24px;
+  border-radius: 1.4vw;
   display: grid;
   place-items: center;
   background: #ffecef;
-  font-size: 38px;
+  font-size: 2.2vw;
 }
 
 .team-card h3,
@@ -166,12 +169,12 @@ h2, h3, h4, p {
 
 .avatars img,
 .mini-avatars img {
-  width: 48px;
-  height: 48px;
+  width: 3vw;
+  height: 3vw;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #fff;
-  margin-left: -10px;
+  border: 0.15vw solid #fff;
+  margin-left: -0.6vw;
 }
 
 .avatars img:first-child,
@@ -180,20 +183,20 @@ h2, h3, h4, p {
 }
 
 .avatar-more {
-  width: 48px;
-  height: 48px;
+  width: 3vw;
+  height: 3vw;
   border-radius: 50%;
   background: #30343f;
   color: #fff;
   display: grid;
   place-items: center;
-  margin-left: -10px;
+  margin-left: -0.6vw;
 }
 
 .team-card hr {
   width: 100%;
   border: 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 0.08vw solid #e6e6e6;
 }
 
 .team-card h2 {
@@ -213,25 +216,25 @@ h2, h3, h4, p {
 .agency-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  gap: 0.8vw;
 }
 
 .agency-images img {
   width: 100%;
-  height: 178px;
-  border-radius: 26px;
+  height: 11vh;
+  border-radius: 1.6vw;
   object-fit: cover;
 }
 
 .mini-avatars span {
-  width: 36px;
-  height: 36px;
+  width: 2.2vw;
+  height: 2.2vw;
   border-radius: 50%;
   background: #ff5b80;
   color: white;
   display: grid;
   place-items: center;
-  margin-left: -8px;
+  margin-left: -0.5vw;
 }
 
 .hero-image {
@@ -251,25 +254,25 @@ h2, h3, h4, p {
 .float-card {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  padding: 14px 16px;
+  border-radius: 1.2vw;
+  padding: 0.8vh 0.8vw;
   z-index: 2;
 }
 
-.left-top { left: 24px; top: 25px; }
-.right-top { right: 24px; top: 25px; }
-.left-bottom { left: 24px; bottom: 28px; }
-.right-bottom { right: 24px; bottom: 28px; display: grid; gap: 4px; }
+.left-top { left: 1.3vw; top: 1.3vw; }
+.right-top { right: 1.3vw; top: 1.3vw; }
+.left-bottom { left: 1.3vw; bottom: 1.5vw; }
+.right-bottom { right: 1.3vw; bottom: 1.5vw; display: grid; gap: 0.3vw; }
 
 .play-card {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.7vw;
 }
 
 .play {
-  width: 42px;
-  height: 42px;
+  width: 2.6vw;
+  height: 2.6vw;
   border-radius: 50%;
   background: #ff5a80;
   color: #fff;
@@ -277,17 +280,17 @@ h2, h3, h4, p {
   place-items: center;
 }
 
-.font-card h3 { font-size: 44px; }
+.font-card h3 { font-size: 2.7vw; }
 
 .swatches {
   display: flex;
-  gap: 10px;
+  gap: 0.6vw;
 }
 
 .swatches span {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0.7vw;
   background: var(--c);
 }
 
@@ -301,37 +304,37 @@ h2, h3, h4, p {
 }
 
 .dark-btn {
-  margin-top: 10px;
+  margin-top: 0.6vh;
   background: #11151f;
   color: #fff;
-  padding: 12px 24px;
+  padding: 1vh 1.2vw;
 }
 
 .orb {
-  width: 140px;
+  width: 8.5vw;
   aspect-ratio: 1;
   border-radius: 40% 60% 58% 42% / 41% 37% 63% 59%;
   background: radial-gradient(circle at 30% 30%, #333, #0f1117 70%);
 }
 
 .logo-card .rings {
-  font-size: 88px;
+  font-size: 5.2vw;
   line-height: 1;
 }
 
 .logo-card h3 {
-  font-size: 60px;
-  letter-spacing: 1px;
+  font-size: 3.8vw;
+  letter-spacing: 0.08vw;
 }
 
 .logo-card p {
-  font-size: 1.9rem;
+  font-size: 2vw;
 }
 
 .pink-btn {
-  margin-top: 18px;
+  margin-top: 1vh;
   background: #ffc4d1;
-  padding: 14px 30px;
+  padding: 1.1vh 1.5vw;
   font-weight: 700;
 }
 
@@ -347,8 +350,8 @@ h2, h3, h4, p {
       "font design"
       "font design";
   }
-  .logo-card { min-height: 320px; }
-  .hero-card { min-height: 470px; }
+  .logo-card { min-height: 30vh; }
+  .hero-card { min-height: 45vh; }
 }
 
 @media (max-width: 860px) {
@@ -366,6 +369,6 @@ h2, h3, h4, p {
       "design"
       "logo";
   }
-  .card { padding: 20px; border-radius: 22px; }
-  .hero-card { min-height: 360px; }
+  .card { padding: 2vh 2vw; border-radius: 2.5vw; }
+  .hero-card { min-height: 38vh; }
 }
