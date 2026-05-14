@@ -187,6 +187,10 @@ body {
     line-height: 1.4;
 }
 
+.metric-card .label-sub {
+    display: block;
+}
+
 .metric-card .corner-icon {
     position: absolute;
     right: 46px;
