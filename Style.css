@@ -13,7 +13,7 @@ body {
 .dashboard-shell {
   width: 100%;
   min-height: 100vh;
-  padding: 2vh 2.5vw;
+  padding: 2.4vh 3vw;
 }
 
 .dashboard-grid {
@@ -28,14 +28,14 @@ body {
     "progress hero hero team"
     "agency hero hero logo"
     "agency font design logo";
-  gap: 1.2vh 1.2vw;
+  gap: 1.3vh 1.3vw;
 }
 
 .card {
   border-radius: 1.6vw;
   background: #fff;
   overflow: hidden;
-  padding: 1.6vw 1.8vw;
+  padding: 1.7vw 1.9vw;
   position: relative;
 }
 
@@ -60,14 +60,14 @@ h2, h3, h4, p {
 }
 
 .card-top h2 {
-  max-width: 10vw;
-  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  max-width: 11vw;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .menu-btn {
   border: 0;
   background: transparent;
-  font-size: 1.4vw;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ h2, h3, h4, p {
 .ring strong { font-size: 3.2vw; }
 .ring span { color: #555; }
 
-.progress-card h3 { font-size: 3.8vw; line-height: 1; }
+.progress-card h3 { font-size: clamp(2.6rem, 3.6vw, 3.6rem); line-height: 1; }
 .progress-card p { font-size: clamp(1.1rem, 1.6vw, 1.2rem); color: #2e2e2e; line-height: 1.4; }
 .progress-card p span,
 .metric-card p span,
@@ -113,7 +113,7 @@ h2, h3, h4, p {
   justify-self: start;
   padding: 1.2vh 1.6vw;
   background: #fff;
-  font-size: 0.95vw;
+  font-size: clamp(0.85rem, 0.95vw, 1rem);
   font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ h2, h3, h4, p {
 
 .metric-card h3,
 .users-card h3 {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-size: clamp(2.6rem, 4.6vw, 4rem);
 }
 
 .badge-heart {
@@ -179,8 +179,8 @@ h2, h3, h4, p {
 
 .avatars img,
 .mini-avatars img {
-  width: 3vw;
-  height: 3vw;
+  width: 3.2vw;
+  height: 3.2vw;
   object-fit: cover;
   border-radius: 50%;
   border: 0.15vw solid #fff;
@@ -193,8 +193,8 @@ h2, h3, h4, p {
 }
 
 .avatar-more {
-  width: 3vw;
-  height: 3vw;
+  width: 3.2vw;
+  height: 3.2vw;
   border-radius: 50%;
   background: #30343f;
   color: #fff;
@@ -207,11 +207,11 @@ h2, h3, h4, p {
   width: 100%;
   border: 0;
   border-top: 1px solid #e6e6e6;
-  margin: 0.4vh 0;
+  margin: 0.6vh 0;
 }
 
 .team-card h2 {
-  font-size: clamp(3rem, 5vw, 5.4rem);
+  font-size: clamp(2.8rem, 4.8vw, 5rem);
   line-height: 1;
 }
 
@@ -236,7 +236,7 @@ h2, h3, h4, p {
 
 .agency-images img {
   width: 100%;
-  height: 12vh;
+  height: 13vh;
   border-radius: 1.4vw;
   object-fit: cover;
 }
@@ -315,7 +315,7 @@ h2, h3, h4, p {
   background: transparent;
   text-align: left;
   font: inherit;
-  font-size: 1.2vw;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
   cursor: pointer;
 }
 
@@ -324,7 +324,7 @@ h2, h3, h4, p {
   background: #11151f;
   color: #fff;
   padding: 1.1vh 1.4vw;
-  font-size: 0.95vw;
+  font-size: clamp(0.85rem, 0.95vw, 1rem);
   font-weight: 700;
 }
 
@@ -336,17 +336,17 @@ h2, h3, h4, p {
 }
 
 .logo-card .rings {
-  font-size: 5.2vw;
+  font-size: 4.8vw;
   line-height: 1;
 }
 
 .logo-card h3 {
-  font-size: 3.8vw;
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
   letter-spacing: 0.08vw;
 }
 
 .logo-card p {
-  font-size: 2vw;
+  font-size: clamp(1.1rem, 1.7vw, 1.6rem);
 }
 
 .pink-btn {
@@ -354,11 +354,11 @@ h2, h3, h4, p {
   background: #ffc4d1;
   padding: 1.2vh 2vw;
   font-weight: 700;
-  font-size: 1vw;
+  font-size: clamp(0.85rem, 1vw, 1rem);
 }
 
 @media (max-width: 1300px) {
-  .dashboard-shell { padding: 1.5vh 2vw; }
+  .dashboard-shell { padding: 1.8vh 2.4vw; }
   .dashboard-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -369,14 +369,14 @@ h2, h3, h4, p {
       "agency logo"
       "font design"
       "font design";
-    gap: 1.2vh 1.2vw;
+    gap: 1.3vh 1.3vw;
   }
   .logo-card { min-height: 30vh; }
   .hero-card { min-height: 45vh; }
 }
 
 @media (max-width: 860px) {
-  .dashboard-shell { padding: 1.5vh 3vw; }
+  .dashboard-shell { padding: 1.8vh 3.5vw; }
   .dashboard-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -389,8 +389,12 @@ h2, h3, h4, p {
       "font"
       "design"
       "logo";
-    gap: 1.2vh;
+    gap: 1.3vh;
   }
-  .card { padding: 2.5vh 4vw; border-radius: 4vw; }
+  .card { padding: 2.8vh 4.2vw; border-radius: 4vw; }
+  .avatars img,
+  .mini-avatars img,
+  .avatar-more { width: 11vw; height: 11vw; }
+  .agency-images img { height: 18vh; }
   .hero-card { min-height: 38vh; }
 }
