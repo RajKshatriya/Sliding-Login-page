@@ -1,125 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Bento Grid Layout</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    <main class="dashboard-shell">
-        <section class="dashboard-grid">
-            <article class="card progress-card">
-                <div class="card-top">
-                    <h2>Brand of Designing</h2>
-                    <button class="menu-btn" aria-label="More options"><span aria-hidden="true">⋯</span></button>
-                </div>
-                <div class="ring-wrap">
-                    <div class="ring">
-                        <strong>75%</strong>
-                        <span>Progress</span>
-                    </div>
-                </div>
-                <h3>2.5K</h3>
-                <p><span>263 contributions in</span><span>the last year</span></p>
-                <button class="soft-btn">View report</button>
-            </article>
+    <main>
+        <section class="bento-grid">
+            <div class="lefttop1"></div>
+            <div class="top1"></div>
+            <div class="top2"></div>
+            <div class="righttop1"></div>
+            <div class="lefttop2"></div>
 
-            <article class="card metric-card">
-                <div class="metric-line">
-                    <h3>4.875</h3>
-                    <span class="badge-heart">♥</span>
+            <div class="center">
+                <div class="bg-circle">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80" alt="Model portrait">
                 </div>
-                <p><span>Project Views</span><span>last year</span></p>
-                <div class="chip">↗ +15%</div>
-            </article>
+                <div class="Engagement-rate">
+                    <p class="c-percent">19.46%</p>
+                    <p>Engagement Rate</p>
+                    <p>+102.48%</p>
+                </div>
+            </div>
 
-            <article class="card users-card">
-                <h4>New Users</h4>
-                <h3>57K</h3>
-                <p><span class="positive">+10% ↗</span><span>vs last month</span></p>
-                <div class="users-icon">👥</div>
-            </article>
+            <div class="righttop2">
+                <div class="circles-container">
+                    <span class="circle circle1"></span>
+                    <span class="circle circle2"></span>
+                    <span class="circle circle3"></span>
+                </div>
+                <h2 class="rt2heading">CUBO</h2>
+                <p class="rt2subheading">Digital Studio</p>
+                <div class="Discoverbutton">
+                    <button>
+                        Discover more
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5L16 12L8 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
-            <article class="card team-card">
-                <h3>Team of passionate designers and developers</h3>
-                <div class="avatars">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80" alt="Team member">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80" alt="Team member">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="Team member">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&q=80" alt="Team member">
-                    <span class="avatar-more">+2</span>
-                </div>
-                <hr>
-                <h4><span>Daily</span><span>New clients</span></h4>
-                <h2>54</h2>
-                <p><span class="metric-increase">+40% ↗</span><span>vs yesterday</span></p>
-            </article>
-
-            <article class="card agency-card">
-                <h3>Smart Digital Agency For Your <span>Business</span></h3>
-                <div class="agency-images">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80" alt="Woman holding phone">
-                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" alt="Woman with headphones">
-                </div>
-                <div class="mini-avatars">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=60&q=80" alt="Client">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=60&q=80" alt="Client">
-                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=60&q=80" alt="Client">
-                    <span>+</span>
-                </div>
-            </article>
-
-            <article class="card hero-card">
-                <img class="hero-image" src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=900&q=80" alt="Smiling woman using a phone">
-                <div class="float-card small left-top">
-                    <strong>Project Growth</strong>
-                </div>
-                <div class="float-card small right-top">
-                    <strong>Conversion Age</strong>
-                </div>
-                <div class="float-card left-bottom play-card">
-                    <span class="play">▶</span>
-                    <strong><span>26.807</span><small>Total Plays</small></strong>
-                </div>
-                <div class="float-card right-bottom">
-                    <strong>19,46%</strong>
-                    <small>Engagement Rate</small>
-                    <span class="positive">↗ +102,48%</span>
-                </div>
-            </article>
-
-            <article class="card font-card">
-                <h3>Font</h3>
-                <p>Sk- Modernist</p>
-                <div class="swatches">
-                    <span style="--c:#1d1f25;"></span>
-                    <span style="--c:#bdbdbd;"></span>
-                    <span style="--c:#ff7693;"></span>
-                    <span style="--c:#f5c6ce;"></span>
-                </div>
-                <button class="text-link">View all fonts</button>
-            </article>
-
-            <article class="card design-card">
-                <div>
-                    <h3>We Build Future of Design Industry</h3>
-                    <p>Crafting Meaningful UX/UI Design</p>
-                    <button class="dark-btn">Explore more</button>
-                </div>
-                <div class="orb"></div>
-            </article>
-
-            <article class="card logo-card">
-                <div class="rings">◍</div>
-                <h3>CUBO</h3>
-                <p>Digital Studio</p>
-                <button class="pink-btn">Discover more</button>
-            </article>
+            <div class="bottom1"></div>
+            <div class="bottom2"></div>
         </section>
     </main>
 </body>
+
 </html>
