@@ -3,67 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Creative Dashboard Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-    <script src="Style.js" defer></script>
 </head>
 <body>
-    <div class="backgroundimage">
+    <main class="dashboard-shell">
+        <section class="dashboard-grid">
+            <article class="card progress-card">
+                <div class="card-top">
+                    <h2>Brand of Designing</h2>
+                    <button class="menu-btn" aria-label="More options">•••</button>
+                </div>
+                <div class="ring-wrap">
+                    <div class="ring">
+                        <strong>75%</strong>
+                        <span>Progress</span>
+                    </div>
+                </div>
+                <h3>2.5K</h3>
+                <p>263 contributions in<br>the last year</p>
+                <button class="soft-btn">View report</button>
+            </article>
 
-    </div>
-    <div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Teacher's Login</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<!-- <input type="email" placeholder="Email" /> -->
-			<input type="password" placeholder="Password" />
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Student Login</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome</h1>
-				<p>To check attendeance please login with your personal info</p>
-				<button class="ghost" id="signIn">student's LOgin</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Student!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Teacher's Login</button>
-			</div>
-		</div>
-	</div>
-</div>
+            <article class="card metric-card">
+                <div class="metric-line">
+                    <h3>4.875</h3>
+                    <span class="badge-heart">♥</span>
+                </div>
+                <p>Project Views<br>last year</p>
+                <div class="chip">↗ +15%</div>
+            </article>
 
-<footer>
-	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="#">Raj Kshatriya</a>
-    </p>
-</footer>
+            <article class="card users-card">
+                <h4>New Users</h4>
+                <h3>57K</h3>
+                <p><span class="positive">+10% ↗</span><br>vs last month</p>
+                <div class="users-icon">👥</div>
+            </article>
+
+            <article class="card team-card">
+                <h3>Team of passionate designers and developers</h3>
+                <div class="avatars">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80" alt="Team member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80" alt="Team member">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&q=80" alt="Team member">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&q=80" alt="Team member">
+                    <span class="avatar-more">+2</span>
+                </div>
+                <hr>
+                <h4>Daily<br>New clients</h4>
+                <h2>54</h2>
+                <p><span class="negative">+40% ↗</span><br>vs yesterday</p>
+            </article>
+
+            <article class="card agency-card">
+                <h3>Smart Digital Agency For Your <span>Business</span></h3>
+                <div class="agency-images">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80" alt="Woman holding phone">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" alt="Woman with headphones">
+                </div>
+                <div class="mini-avatars">
+                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=60&q=80" alt="Client">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=60&q=80" alt="Client">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=60&q=80" alt="Client">
+                    <span>+</span>
+                </div>
+            </article>
+
+            <article class="card hero-card">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=900&q=80" alt="Smiling woman using a phone">
+                <div class="float-card small left-top">
+                    <strong>Project Growth</strong>
+                </div>
+                <div class="float-card small right-top">
+                    <strong>Conversion Age</strong>
+                </div>
+                <div class="float-card left-bottom play-card">
+                    <span class="play">▶</span>
+                    <strong>26.807<br><small>Total Plays</small></strong>
+                </div>
+                <div class="float-card right-bottom">
+                    <strong>19,46%</strong>
+                    <small>Engagement Rate</small>
+                    <span class="positive">↗ +102,48%</span>
+                </div>
+            </article>
+
+            <article class="card font-card">
+                <h3>Font</h3>
+                <p>Sk- Modernist</p>
+                <div class="swatches">
+                    <span style="--c:#1d1f25;"></span>
+                    <span style="--c:#bdbdbd;"></span>
+                    <span style="--c:#ff7693;"></span>
+                    <span style="--c:#f5c6ce;"></span>
+                </div>
+                <button class="text-link">View all fonts</button>
+            </article>
+
+            <article class="card design-card">
+                <div>
+                    <h3>We Build Future of Design Industry</h3>
+                    <p>Crafting Meaningful UX/UI Design</p>
+                    <button class="dark-btn">Explore more</button>
+                </div>
+                <div class="orb"></div>
+            </article>
+
+            <article class="card logo-card">
+                <div class="rings">◍</div>
+                <h3>CUBO</h3>
+                <p>Digital Studio</p>
+                <button class="pink-btn">Discover more</button>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
