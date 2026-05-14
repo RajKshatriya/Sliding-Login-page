@@ -11,18 +11,18 @@ body {
 }
 
 .dashboard-shell {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  padding: 1vh 1vw;
+  padding: 0.6vh 0.6vw;
 }
 
 .dashboard-grid {
   width: 100%;
-  min-height: 98vh;
+  min-height: 96vh;
   margin: 0;
   display: grid;
-  grid-template-columns: 22vw 24.2vw 24.2vw 22vw;
-  grid-template-rows: 23vh 25vh 25vh 22vh;
+  grid-template-columns: 21.5vw 23.7vw 23.7vw 21.5vw;
+  grid-template-rows: 21vh 22vh 22vh 20vh;
   grid-template-areas:
     "progress metric users team"
     "progress hero hero team"
@@ -204,6 +204,10 @@ h2, h3, h4, p {
   line-height: 1;
 }
 
+.team-card h4 span {
+  display: block;
+}
+
 .agency-card h3 {
   font-size: clamp(2rem, 2.8vw, 3.3rem);
   line-height: 1.2;
@@ -299,7 +303,7 @@ h2, h3, h4, p {
   background: transparent;
   text-align: left;
   font: inherit;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   cursor: pointer;
 }
 
@@ -355,7 +359,7 @@ h2, h3, h4, p {
 }
 
 @media (max-width: 860px) {
-  .dashboard-shell { padding: 1rem; }
+  .dashboard-shell { padding: 1vh 1vw; }
   .dashboard-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
