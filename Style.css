@@ -21,8 +21,8 @@ body {
   min-height: 96vh;
   margin: 0;
   display: grid;
-  grid-template-columns: 21.5vw 23.7vw 23.7vw 21.5vw;
-  grid-template-rows: 21vh 22vh 22vh 20vh;
+  grid-template-columns: 20.5vw 22.7vw 22.7vw 20.5vw;
+  grid-template-rows: 20vh 20vh 20vh 18vh;
   grid-template-areas:
     "progress metric users team"
     "progress hero hero team"
@@ -92,6 +92,13 @@ h2, h3, h4, p {
 
 .progress-card h3 { font-size: 3.8vw; line-height: 1; }
 .progress-card p { font-size: clamp(1.1rem, 1.6vw, 1.2rem); color: #2e2e2e; line-height: 1.4; }
+.progress-card p span,
+.metric-card p span,
+.users-card p span,
+.team-card p span,
+.play-card strong span {
+  display: block;
+}
 
 .soft-btn,
 .dark-btn,
